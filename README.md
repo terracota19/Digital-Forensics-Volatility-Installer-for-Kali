@@ -14,14 +14,14 @@ This Bash script automates the setup of the **Volatility Framework** on Kali Lin
 - Clones the official Volatility repository from GitHub
 - Installs Volatility within its isolated environment
 
+
 ## ⚠️ Requirements
 
-- - **Kali Linux** o cualquier distribución basada en Debian, pero también puede funcionar en otras distribuciones de Linux.
-- **Python 2.7** debe estar instalado.
-- **virtualenv** debe estar instalado. Si no está, usa el siguiente comando:
-- Internet (to download packages and repositories)
-  ```bash
-  sudo apt install python2 python2-dev python3-venv python-pip git virtualenv
+- **Kali Linux** or any Debian-based distribution, but it may also work on other Linux distributions.
+- **Python 2.7** must be installed.
+- **virtualenv** must be installed.
+ 
+
 
 ## 🚀 Usage
 
