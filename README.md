@@ -17,7 +17,7 @@ This Bash script automates the setup of the **Volatility Framework** on Kali Lin
 
 ## ⚠️ Requirements
 
-- **Kali Linux** or any Debian-based distribution, but it may also work on other Linux distributions.
+- **Kali Linux**.
 - **Python 2.7** must be installed.
 - **virtualenv** must be installed.
  
