@@ -22,7 +22,7 @@ This Bash script automates the setup of the **Volatility Framework** on Kali Lin
 ## 🚀 Usage
 
 1. Clone this repository or download the script manually.
-2. Make sure the script has execute permissions (optional):
+2. Make sure the script has execute permissions:
 
    ```bash
    chmod +x volatility-install.sh
