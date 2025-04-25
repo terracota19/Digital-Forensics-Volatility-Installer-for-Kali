@@ -1,2 +1,29 @@
-# Volatility-Installer-for-Debian-based-Systems
-This script automates the installation and configuration of the Volatility Framework on Kali Linux systems, using isolated Python 2 virtual environments to ensure compatibility with legacy forensic tools.
+# 🧠 Volatility Kali Installation Script (Python2 Legacy)
+
+This Bash script automates the setup of the **Volatility Framework** on Kali Linux, using isolated Python 2 virtual environments to ensure compatibility with legacy forensic tools and modules.
+
+## 🔧 What It Does
+
+- Creates a working directory at `~/scripts`
+- Installs required packages: `virtualenv` and `python-dev`
+- Sets up two Python 2 virtual environments:
+  - `venv`: for auxiliary tools and common dependencies
+  - `volatility`: for the Volatility framework itself
+- Installs a legacy-compatible version of `pip` for Python 2
+- Installs essential libraries: `pycryptodome`, `distorm3==3.3.4`
+- Clones the official Volatility repository from GitHub
+- Installs Volatility within its isolated environment
+
+## ⚠️ Requirements
+
+- **Kali Linux** or another Debian-based Linux distribution
+- Internet access (to download packages and repositories)
+
+## 🚀 Usage
+
+1. Clone this repository or download the script manually.
+2. Make sure the script has execute permissions (optional):
+
+   ```bash
+   chmod +x volatility-install.sh
+   sudo bash volatility-install.sh
