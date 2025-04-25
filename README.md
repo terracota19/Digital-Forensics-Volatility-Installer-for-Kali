@@ -1,4 +1,4 @@
-# 🧠 Volatility Kali Installation Script (Python2 Legacy)
+# 🧠 Volatility 2 Kali Installation Script (Python2 Legacy)
 
 This Bash script automates the setup of the **Volatility Framework** on Kali Linux, using isolated Python 2 virtual environments to ensure compatibility with legacy forensic tools and modules.
 
