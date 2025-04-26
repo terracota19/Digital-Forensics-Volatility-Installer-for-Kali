@@ -20,7 +20,11 @@ This Bash script automates the setup of the **Volatility Framework** on Kali Lin
 - **Kali Linux**.
 - **Python 2.7** must be installed.
 - **virtualenv** must be installed.
- 
+  
+   ```bash
+  sudo apt update && sudo apt upgrade
+  sudo apt install python2 python2-dev virtualenv -y
+
 
 
 ## 🚀 Usage
