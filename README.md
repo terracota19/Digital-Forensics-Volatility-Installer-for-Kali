@@ -53,7 +53,7 @@ Ensure the script has execute permissions:
 chmod +x volatility-install.sh
 sudo bash volatility-install.sh
 ```
-### Step 2: Verify the Installation
+### Step 3: Verify the Installation
 To confirm that the installation was successful, run the following command:
 
 ```bash
