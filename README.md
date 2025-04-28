@@ -1,38 +1,56 @@
-# 🧠 Volatility 2 Kali Installation Script (Python2 Legacy)
+# Volatility 2 Kali Installation Script (Python 2 Legacy)
 
-This Bash script automates the setup of the **Volatility Framework** on Kali Linux, using isolated Python 2 virtual environments to ensure compatibility with legacy forensic tools and modules.
+This installation script automates the setup of the **Volatility Framework** on Kali Linux, utilizing isolated Python 2 virtual environments to ensure compatibility with legacy forensic tools and modules.
 
-## 🔧 What It Does
+## Features
 
-- Creates a working directory at `~/scripts`
-- Installs required packages: `virtualenv` and `python-dev`
+The script performs the following tasks:
+
+- Creates a working directory at `~/scripts`.
+- Installs necessary packages: `virtualenv`, `python-dev`, and others.
 - Sets up two Python 2 virtual environments:
-  - `venv`: for auxiliary tools and common dependencies
-  - `volatility`: for the Volatility framework itself
-- Installs a legacy-compatible version of `pip` for Python 2
-- Installs essential libraries: `pycryptodome`, `distorm3==3.3.4`
-- Clones the official Volatility repository from GitHub
-- Installs Volatility within its isolated environment
+  - **venv**: for auxiliary tools and common dependencies.
+  - **volatility**: for the Volatility framework.
+- Installs a legacy-compatible version of `pip` for Python 2.
+- Installs essential libraries: `pycryptodome`, `distorm3==3.3.4` (compatible with Python 2).
+- Clones the official Volatility repository from GitHub.
+- Installs Volatility within its isolated environment.
 
-
-## ⚠️ Requirements
+## Requirements
 
 - **Kali Linux**.
-- **Python 2.7** must be installed.
-- **virtualenv** must be installed.
-  
-   ```bash
-  sudo apt update && sudo apt upgrade
-  ```
-  ```bash
-  sudo apt-get install -y virtualenv python2 python2-dev git build-essential libssl-dev libffi-dev python2.7-dev
-  ```
-  
-## 🚀 Usage
+- **Python 2.7** must be installed on the system.
+- **virtualenv** must be available.
 
-1. Clone this repository or download the script manually.
-2. Make sure the script has execute permissions:
+### Installing Dependencies
 
-   ```bash
-   chmod +x volatility-install.sh
-   sudo bash volatility-install.sh
+Before running the script, ensure your system is up-to-date and install the necessary dependencies:
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+```bash
+sudo apt-get install -y virtualenv python2 python2-dev git build-essential libssl-dev libffi-dev python2.7-dev
+```
+## Usage Instructions
+
+### Step 1: Clone or Download the Script
+
+You can either clone this repository or download the script manually.
+
+To clone the repository:
+
+```bash
+git clone https://github.com/terracota19/Digital-Forensics-Volatility-Installer-for-Kali.git
+cd volatility-install
+```
+
+
+### Step 2: Grant Execute Permissions
+
+Ensure the script has execute permissions:
+
+```bash
+chmod +x volatility-install.sh
+sudo bash volatility-install.sh
+```
