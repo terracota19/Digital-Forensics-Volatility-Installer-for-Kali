@@ -1,20 +1,19 @@
 # Volatility 2 Kali Installation Script (Python 2 Legacy)
 
-This installation script automates the setup of the **Volatility Framework** on Kali Linux, utilizing isolated Python 2 virtual environments to ensure compatibility with legacy forensic tools and modules.
+This installation script automates the setup of the **Volatility Framework** 2.6.1 on Kali Linux, utilizing isolated Python 2 virtual environments to ensure compatibility with legacy forensic tools and modules.
 
 ## Features
 
 The script performs the following tasks:
 
 - Creates a working directory at `~/scripts`.
-- Installs necessary packages: `virtualenv`, `python-dev`, and others.
-- Sets up two Python 2 virtual environments:
-  - **venv**: for auxiliary tools and common dependencies.
-  - **volatility**: for the Volatility framework.
-- Installs a legacy-compatible version of `pip` for Python 2.
-- Installs essential libraries: `pycryptodome`, `distorm3==3.3.4` (compatible with Python 2).
-- Clones the official Volatility repository from GitHub.
-- Installs Volatility within its isolated environment.
+- Creates a Python 2 virtual environment named **venv** (if it doesn't already exist).
+- Activates the virtual environment.
+- Installs a legacy-compatible version of `pip` for Python 2 if it is not already installed.
+- Installs essential Python libraries: `pycryptodome` and `distorm3==3.3.4`.
+- Clones the official Volatility repository from GitHub (if it doesn't already exist).
+- Installs the Volatility framework within the same virtual environment.
+- Deactivates the virtual environment after installation.
 
 ## Requirements
 
