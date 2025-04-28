@@ -42,7 +42,9 @@ To clone the repository:
 
 ```bash
 git clone https://github.com/terracota19/Digital-Forensics-Volatility-Installer-for-Kali.git
-cd volatility-install
+```
+```bash
+cd Digital-Forensics-Volatility-Installer-for-Kali
 ```
 
 ### Step 2: Grant Execute Permissions
