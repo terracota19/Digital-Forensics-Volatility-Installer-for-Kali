@@ -1,28 +1,19 @@
 #!/bin/bash
-
 cd ~/
 mkdir -p scripts && cd scripts
+sudo apt-get install virtualenv python-dev git build-essential libssl-dev libffi-dev python2.7-dev -y
 
-sudo apt-get install virtualenv python-dev -y
+if [ ! -d "venv" ]; then
+    virtualenv -p python2 venv
+fi
 
-# Primer entorno para herramientas
-virtualenv -p python2 venv
 source venv/bin/activate
-
 wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
 python2 get-pip.py
-
-pip install --upgrade setuptools
-pip install pycryptodome distorm3==3.3.4  # versión compatible con Python 2
-
+pip2 install --upgrade setuptools
+pip2 install pycryptodome distorm3==3.3.4  # versión compatible con Python 2
 deactivate
 
-# Segundo entorno exclusivo para Volatility
-virtualenv -p python2 volatility
-source volatility/bin/activate
-
-git clone https://github.com/volatilityfoundation/volatility
-cd volatility
-python setup.py install
-
-deactivate
+if [ ! -d "volatility" ]; then
+    virtualenv -p python2 volatility
+fi
