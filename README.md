@@ -55,7 +55,10 @@ sudo bash volatility-install.sh
 ```
 ### Step 2: Verify the Installation
 To confirm that the installation was successful, run the following command:
-If everything is correctly installed, you should see the Volatility help menu without any errors.
+
 ```bash
 vol.py -h
 ```
+If everything is correctly installed, you should see the Volatility help menu without any errors.
+
+Enjoy Your Forensic Audits!
