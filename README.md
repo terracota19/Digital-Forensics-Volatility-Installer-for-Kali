@@ -45,7 +45,6 @@ git clone https://github.com/terracota19/Digital-Forensics-Volatility-Installer-
 cd volatility-install
 ```
 
-
 ### Step 2: Grant Execute Permissions
 
 Ensure the script has execute permissions:
@@ -53,4 +52,10 @@ Ensure the script has execute permissions:
 ```bash
 chmod +x volatility-install.sh
 sudo bash volatility-install.sh
+```
+### Step 2: Verify the Installation
+To confirm that the installation was successful, run the following command:
+
+```bash
+vol.py -h
 ```
