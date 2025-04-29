@@ -10,10 +10,14 @@ The script performs the following tasks:
 - Creates a Python 2 virtual environment named **venv** (if it doesn't already exist).
 - Activates the virtual environment.
 - Installs a legacy-compatible version of `pip` for Python 2 if it is not already installed.
-- Installs essential Python libraries: `pycryptodome` and `distorm3==3.3.4`.
+- Installs essential Python libraries:
+  - `pycryptodome` (for cryptographic operations)
+  - `distorm3==3.3.4` (for disassembly support)
+  - `yara-python==3.8.1` (for YARA integration in memory analysis)
 - Clones the official Volatility repository from GitHub (if it doesn't already exist).
-- Installs the Volatility framework within the same virtual environment.
+- Installs the Volatility 2.6.1 framework within the virtual environment.
 - Deactivates the virtual environment after installation.
+
 
 ## Requirements
 
