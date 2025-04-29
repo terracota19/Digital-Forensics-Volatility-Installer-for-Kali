@@ -1,6 +1,6 @@
 # Volatility 2 Kali Installation Script (Python 2 Legacy)
 
-This installation script automates the setup of the **Volatility Framework** 2.6.1 on Kali Linux, utilizing isolated Python 2 virtual environments to ensure compatibility with legacy forensic tools and modules.
+This installation script automates the setup of the Volatility Framework 2.6.1 on Kali Linux, utilizing an isolated Python 2 virtual environment to ensure compatibility with legacy forensic tools and modules, including optional YARA-based memory scanning support via `yara-python==3.8.1`.
 
 ## Features
 
