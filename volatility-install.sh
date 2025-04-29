@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Preparar entorno de trabajo
 cd ~/
 mkdir -p scripts && cd scripts
 
