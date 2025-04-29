@@ -29,8 +29,12 @@ Before running the script, ensure your system is up-to-date and install the nece
 sudo apt update && sudo apt upgrade -y
 ```
 ```bash
-sudo apt-get install virtualenv python2 python2-dev python-dev-is-python3 git build-essential libssl-dev libffi-dev python2.7-dev -y
+sudo apt-get install virtualenv python2 python2-dev python-dev-is-python3 git build-essential libssl-dev libffi-dev python2.7-dev  -y
 ```
+```bash
+sudo pip install yara-python==3.8.1
+```
+
 ## Usage Instructions
 
 ### Step 1: Clone or Download the Script
