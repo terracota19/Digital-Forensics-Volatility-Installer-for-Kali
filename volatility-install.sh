@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Preparar entorno de trabajo
 cd ~/
 mkdir -p scripts && cd scripts
 
@@ -15,7 +16,7 @@ if ! command -v pip2 &> /dev/null; then
 fi
 
 pip2 install --upgrade setuptools
-pip2 install pycryptodome distorm3==3.3.4
+pip2 install pycryptodome distorm3==3.3.4 yara-python==3.8.1
 
 if [ ! -d "volatility" ]; then
     git clone https://github.com/volatilityfoundation/volatility.git
@@ -25,6 +26,3 @@ cd volatility
 python2 setup.py install
 
 deactivate
-
-echo "Volatility ha sido instalado correctamente."
-echo "Para verificar la instalación, ejecuta 'vol.py -h'."
