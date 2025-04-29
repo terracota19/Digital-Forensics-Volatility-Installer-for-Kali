@@ -31,9 +31,7 @@ sudo apt update && sudo apt upgrade -y
 ```bash
 sudo apt-get install -y virtualenv python2 python2-dev git build-essential libssl-dev libffi-dev
 ```
-```bash
-sudo pip install yara-python==3.8.1
-```
+
 
 ## Usage Instructions
 
