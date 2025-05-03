@@ -32,10 +32,6 @@ cat << 'EOF' | sudo tee /usr/local/bin/vol.py > /dev/null
 #!/bin/bash
 source "$HOME/scripts/venv/bin/activate"
 python2 "$HOME/scripts/volatility/vol.py" "$@"
-deactivate
 EOF
 
 sudo chmod +x /usr/local/bin/vol.py
-
-deactivate
-
