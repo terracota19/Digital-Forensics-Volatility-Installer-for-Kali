@@ -21,40 +21,18 @@ The script performs the following tasks:
 
 ## Requirements
 
-- **Kali Linux**.
-- **Python 2.7** must be installed on the system.
-- **virtualenv** must be available.
+- Kali Linux with sudo privileges.
+- Internet connection to install system and Python packages.
 
-### Installing Dependencies
-
-Before running the script, ensure your system is up-to-date and install the necessary dependencies:
-
-```bash
-sudo apt update && sudo apt upgrade -y
-```
-```bash
-sudo apt-get install -y virtualenv python2 python2-dev git build-essential libssl-dev libffi-dev
-```
 
 
 ## Usage Instructions
 
-### Step 1: Clone or Download the Script
+### Step 1: Download or Create the Script
 
-You can either clone this repository or download the script manually.
-
-To clone the repository:
-
-```bash
-git clone https://github.com/terracota19/Digital-Forensics-Volatility-Installer-for-Kali.git
-```
-```bash
-cd Digital-Forensics-Volatility-Installer-for-Kali
-```
+Create a new file named `volatility-install.sh` and paste the script contents into it.
 
 ### Step 2: Grant Execute Permissions
-
-Ensure the script has execute permissions:
 
 ```bash
 chmod +x volatility-install.sh
@@ -62,6 +40,7 @@ chmod +x volatility-install.sh
 ```bash
 sudo bash volatility-install.sh
 ```
+
 ### Step 3: Verify the Installation
 To confirm that the installation was successful, run the following command:
 
