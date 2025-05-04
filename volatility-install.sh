@@ -28,3 +28,4 @@ fi
 
 cd volatility
 sudo python2 setup.py install
+sudo ln -s ~/scripts/volatility/vol.py /usr/local/bin/volatility
