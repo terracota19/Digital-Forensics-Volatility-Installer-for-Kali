@@ -1,14 +1,10 @@
 #!/bin/bash
 
 sudo apt update
-sudo apt install -y build-essential git libdistorm3-dev yara libraw1394-11 \
-    libcapstone-dev capstone-tool tzdata python2 python2.7-dev libpython2-dev curl
+sudo apt install -y python2.7 python2.7-dev python2-pip build-essential curl \
+    libdistorm3-dev libcapstone-dev capstone-tool libraw1394-11 yara
 
-if ! command -v pip2 &> /dev/null; then
-    curl -O https://bootstrap.pypa.io/pip/2.7/get-pip.py
-    sudo python2 get-pip.py
-fi
-
+sudo python2.7 -m pip install --upgrade pip
 sudo pip2 install --upgrade setuptools wheel
 sudo pip2 install pycryptodome distorm3==3.3.4 yara-python==3.8.1 pillow openpyxl ujson pytz ipython capstone
 
@@ -20,4 +16,4 @@ if [ ! -d "volatility" ]; then
 fi
 
 cd volatility
-sudo python2 setup.py install
+sudo python2.7 setup.py install
