@@ -6,22 +6,17 @@ This installation script automates the setup of the Volatility Framework 2.6.1 o
 
 The script performs the following tasks:
 
-- Creates a working directory at `~/scripts`.
-- Creates a Python 2 virtual environment named **venv** (if it doesn't already exist).
-- Activates the virtual environment.
-- Installs a legacy-compatible version of `pip` for Python 2 if it is not already installed.
+- Installs Python 2.7, `pip2`, and required dependencies.
 - Installs essential Python libraries:
   - `pycryptodome` (for cryptographic operations)
   - `distorm3==3.3.4` (for disassembly support)
   - `yara-python==3.8.1` (for YARA integration in memory analysis)
-- Clones the official Volatility repository from GitHub (if it doesn't already exist).
-- Installs the Volatility 2.6.1 framework within the virtual environment.
-- Deactivates the virtual environment after installation.
-
-
+- Clones the official Volatility repository from GitHub.
+- Installs Volatility 2.6.1 framework on the system.
+- Creates a symbolic link to run **Volatility** from any directory.
 ## Requirements
 
-- Kali Linux with sudo privileges.
+- UNIX System with sudo privileges.
 - Internet connection to install system and Python packages.
 
 
