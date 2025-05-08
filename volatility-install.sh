@@ -19,4 +19,10 @@ cd volatility
 sudo python2.7 setup.py install
 
 sudo ln -s ~/scripts/volatility/vol.py /usr/local/bin/volatility
-sudo ln -s /usr/local/lib/python2.7/dist-packages/usr/lib/libyara.so /usr/lib/libyara.so
+
+if [ -f /usr/local/lib/python2.7/dist-packages/yara/libyara.so ]; then
+    sudo ln -s /usr/local/lib/python2.7/dist-packages/yara/libyara.so /usr/lib/libyara.so
+else
+    echo "libyara.so no encontrado. Verifica la instalación de yara-python."
+fi
+
